@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*
+	Created by: J.J Teoh
+    	Created On: 20 Feb 2016
+    	Last Modified: 20 Feb 2016
+    	Last Review: 20 Feb 2016 
+ */
+ 
+
+ 
+ header {
+	 width:100%;
+	 background-color:#191970;
+ }
+ 
+ header h1{
+	color:#f9f9ff;
+	font-size:2.5em;
+	font-weight:bold;
+	padding: 20px;
+	width:100%;
+	text-align:center;
+	box-sizing: border-box;
+ }
+
+ 
+.main {
+	width:100%;
+	box-sizing:border-box;
+}
+
+footer {
+	background-color:#161619;
+	width:inherit;
+	padding:20px;
+}
+
+footer small{
+	color: #f9f9ff;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.special {
+	font-weight:bold;
+	cursor:pointer;
+}
+
