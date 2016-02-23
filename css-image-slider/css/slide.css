@@ -1,0 +1,63 @@
+/*
+	Created by: J.J Teoh
+    Created On: 20 Feb 2016
+    Last Modified: 20 Feb 2016
+    Last Review: 20 Feb 2016 
+ */
+
+/*general slide styling*/
+
+ .slider-wrapper{
+	 padding:0;
+	 margin:20px 6.5em;
+	 width:1170px;
+	 height:550px;;
+	 position:relative;
+	 overflow: hidden;
+ }
+ 
+ .slider-wrapper img{
+	 width:1170px;
+	 height:500px;
+	 position:absolute;
+	 margin:0;
+	 left:1170px;
+	 cursor: pointer;;
+ }
+
+
+ /*slide image styles and sliding animation*/
+ img[title='photo1'] {
+ 	animation: slideIn 15s linear 0s infinite;
+ }
+
+  img[title='photo2'] {
+ 	animation: slideIn 15s linear 5s infinite;
+ }
+
+
+  img[title='photo3'] {
+ 	animation: slideIn 15s linear 10s infinite;
+ }
+
+  img[title='photo4'] {
+ 	animation: slideIn 15s linear 15s infinite;
+ }
+ 
+ .slider-wrapper img:hover,
+ .slider-wrapper img:hover ~ img[title] {
+ 	animation-play-state: paused;
+ }
+
+/*keyframes function for slide in*/
+
+@keyframes slideIn{
+  0% {left: 1170px;}
+  1% {left: 0;}
+  40% {left: 0;}
+  41%{left:-1170px;}
+  100%{left: -1170px;}
+}
+
+
+
