@@ -134,9 +134,3 @@ if(elPrev.addEventListener){
 }
 
 
-//var h = document.createElement("H1");                
-//var t = document.createTextNode("Hello World");
-//h.appendChild(t);
-//document.getElementById('first').appendChild(h);
-
-
