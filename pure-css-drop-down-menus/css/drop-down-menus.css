@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*
+
+	Created by: J.J Teoh
+    Created On: 18 Feb 2016
+    Last Modified: 18 Feb 2016
+    Last Review: 18 Feb 2016
+	
+ */
+ 
+
+ .root-menu {
+	 display:flex;
+	 flex-direction: row;
+	 background-color:rgb(22,22,25);
+ }
+ 
+ .root-menu li {
+	padding:10px 20px;;
+	cursor:pointer;
+	position:relative;
+ }
+ 
+ .root-menu li>a{
+	 color:#fcfcff;
+	 font-size:1.5em;
+	 font-weight:600;
+ }
+ 
+ .root-menu li a:hover{
+	 text-shadow: 1px 0px 20px #fff;
+ }
+ 
+ .child-menu,
+ .grandchild-menu {
+	 position:absolute;
+	 display:none;
+	 background-color:rgba(114,114,127,0.8);
+	 border-radius: 0px 0 3px 3px;
+ }
+ 
+ .root-menu li:hover>.child-menu {
+	 display:flex;
+	 flex-direction: column;
+	 top:100%;
+	 left:0;
+	 z-index:1; 
+ }
+ 
+ .child-menu li {
+	 cursor:pointer;
+	 position:relative;
+ }
+
+.child-menu li:hover> .grandchild-menu {
+	background-color:rgba(114,114,127,0.4);
+	display:flex;
+	flex-direction: column;
+	top:0;
+	left:100%;
+	z-index:1; 
+}
+
+
+.nav-arrow:before {
+	content:'\25be'; /*down-headed-arrow*/
+}
+
+.root-menu li>a:hover>.nav-arrow:before,
+.nav-arrow:hover:before {
+	content:'\25b4'; /*up-headed-arrow*/
+}
+
+.nav-arrow2:before {
+	content:'\25b8'; /*right-headed-arrow*/
+}
+
+.child-menu li>a:hover>.nav-arrow2:before,
+.nav-arrow2:hover:before {
+	content:'\25c2'; /*left-headed-arrow*/
+}
