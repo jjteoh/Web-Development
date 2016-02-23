@@ -1,17 +1,17 @@
 <!--
+    
+    Created by: J.J Teoh
+    Created On: 21 Feb 2016
+    Last Modified: 21 Feb 2016
+    Last Review: 22 Feb 2016
+    Remark: All images taken from Unsplash 
 
-	Created by: J.J Teoh
-    	Created On: 20 Feb 2016
-    	Last Modified: 23 Feb 2016
-	Last Review: 23 Feb 2016
-	Remark: Images are taken from Unsplash.com
-  
- -->
+-->
 <!DOCTYPE>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Simple CSS Image Slider</title>
+<title>JS Image Slider</title>
 
 <link href="css/reset.css" type="text/css" rel="stylesheet" />
 <link href="css/demo.css" type="text/css" rel="stylesheet" media="screen" />
@@ -20,20 +20,27 @@
 
 <body>
 	<header>
-    	<h1>Simple CSS Image Slider</h1>
+    	<h1>JS Image Slider</h1>
     </header>
-    
+
     <main class="main">
     	<div class="slider-wrapper">
-            <img src="slide-img/photo1.jfif" alt="photo1" title="photo1" />
-            <img src="slide-img/photo2.jfif" alt="photo2" title="photo2" />
-            <img src="slide-img/photo3.jfif" alt="photo3" title="photo3" />
-            <img src="slide-img/photo4.jfif" alt="photo4" title="photo4" />
-        </div>
+    		<img class="slide-img" src="slide-img/photo1.jfif" alt="photo1" title="photo1" />
+            <img class="slide-img" src="slide-img/photo2.jfif" alt="photo2" title="photo2" />
+            <img class="slide-img" src="slide-img/photo3.jfif" alt="photo3" title="photo3" />
+            <img class="slide-img" src="slide-img/photo4.jfif" alt="photo4" title="photo4" />
+            <div id="dot1" class="dots"></div>
+            <div id="dot2" class="dots"></div>
+            <div id="dot3" class="dots"></div>
+            <div id="dot4" class="dots"></div>
+            <div id="arrow-lt" class="arrow"><span>&lt;</span></div>
+            <div id="arrow-gt" class="arrow"><span>&gt;</span></div>
+    	</div>
     </main>
-    
-    <footer>
-    	<small>Created by: <a href="#" title="Learn More" class="special">JJTeoh</a> &copy;2016</small>
+
+     <footer>
+        <small id='first'>Created by: <a href="#" title="Learn More" class="special">JJTeoh</a> &copy;2016</small>
     </footer>
+<script type="text/javascript" src="js/slide.js"></script>
 </body>
 </html>
